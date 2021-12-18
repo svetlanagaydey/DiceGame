@@ -1,0 +1,31 @@
+.diceButton {
+    width: 60px;
+    height: 30px;
+}
+#dice1,
+#dice2 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	transition: all 0.2s ease;
+	margin-bottom: 6rem;
+}
+
+.number1 {
+	background: url("Images/dice-1.png") no-repeat center center/cover;
+}
+.number2 {
+	background: url("Images/dice-2.png") no-repeat center center/cover;
+}
+.number3 {
+	background: url("Images/dice-3.png") no-repeat center center/cover;
+}
+.number4 {
+	background: url("Images/dice-4.png") no-repeat center center/cover;
+}
+.number5 {
+	background: url("Images/dice-5.png") no-repeat center center/cover;
+}
+.number6 {
+	background: url("Images/dice-6.png") no-repeat center center/cover;
+}
