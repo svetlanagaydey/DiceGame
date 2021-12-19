@@ -1,5 +1,6 @@
 import React from "react";
 import Counter from "../Counter/Counter.jsx";
+import './Player.css';
 const Player = (props) => {
 	const { globalScore, tempScore, playerNumber } = props;
 	return (

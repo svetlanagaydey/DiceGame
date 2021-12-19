@@ -1,6 +1,7 @@
 import React from 'react';
 import Player from '../Player/Player.jsx';
-import Dice from '../Dice/Dice.jsx'
+import Dice from '../Dice/Dice.jsx';
+import './Board.css';
 class Border extends React.Component {
     state = { p1Score: 0, p2Score: 0, p1Temp: 0, p2Temp: 0, playerTurn: 1, pointsToWin: 0};
     
@@ -47,12 +48,19 @@ class Border extends React.Component {
     render () {
         const { p1Score, p2Score, p1Temp, p2Temp } = this.state;
         return (
-            <div>
-                <input type="number" onKeyPress={this.GetPointsToWid} className="pointsToWin"/>
-                <Dice onChange={this.OnScoreChange} onClick={this.HoldScore} />
-                <button type="button" onClick={this.Reset}>Reset</button>
-                <Player playerNumber={1} tempScore={p1Temp} globalScore={p1Score} />
-                <Player playerNumber={2} tempScore={p2Temp} globalScore={p2Score} />
+            <div className='container'>
+                <div className="boardMainButtons">
+                    <label htmlFor="" className="PointsToWinLabel">Press Points to win your want</label>
+                    <input type="number" onKeyPress={this.GetPointsToWid} className="pointsToWin"/>
+                    <Dice onChange={this.OnScoreChange} onClick={this.HoldScore} />
+                    <button type="button" className="resetButton" onClick={this.Reset}>Reset</button>
+                </div>
+                
+                <div className="boardPlayers">
+                    <Player playerNumber={1} tempScore={p1Temp} globalScore={p1Score} className="player" />
+                    <Player playerNumber={2} tempScore={p2Temp} globalScore={p2Score} className="player"/>
+                </div>
+                
                 
                 
             </div>

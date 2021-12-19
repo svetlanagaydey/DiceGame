@@ -34,13 +34,14 @@ class Dice extends React.Component {
     
     render () {
         return (
-            <div>
+            <div className='diceBlock'>
                 <button className='diceButton' onClick={this.rollDice}>Dice</button>
+                <div className="dicesImamge">
                 <div id="dice1">{this.state.dice1}</div>
                 <div id="dice2">{this.state.dice2}</div>
-                <button type="button" onClick={this.props.onClick} className="hold-btn">
-					<i className="fas fa-hand-holding"></i> Hold
-				</button>
+                </div>
+                
+                <button className="holdButton" type="button" onClick={this.props.onClick} >Hold </button>
             </div>
         )
     }

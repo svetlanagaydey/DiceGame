@@ -6,9 +6,13 @@ class Counter extends React.Component {
 		const counterText = isTemp ? `Temp Score:` : `Total Score:`;
 		return (
 			<div className={counterClass}>
-				<h3>
-					{counterText} {this.props.score}
+				<h3 className="counterTitle">
+					{counterText} 
 				</h3>
+				<p className="counterScore">
+					CURRENT <br/>
+					{this.props.score}
+				</p>
 			</div>
 		);
 	}

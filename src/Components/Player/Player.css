@@ -1,0 +1,8 @@
+.player-1,
+.player-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
