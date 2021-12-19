@@ -1,4 +1,5 @@
 import React from 'react';
+import './Counter.css'
 class Counter extends React.Component {
 	render() {
 		const { playerNumber, isTemp } = this.props;
@@ -10,7 +11,7 @@ class Counter extends React.Component {
 					{counterText} 
 				</h3>
 				<p className="counterScore">
-					CURRENT <br/>
+					
 					{this.props.score}
 				</p>
 			</div>

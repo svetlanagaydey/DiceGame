@@ -6,3 +6,6 @@
     justify-self: center;
     align-items: center;
 }
+.playerTitle {
+    font-size: 40px;
+}
